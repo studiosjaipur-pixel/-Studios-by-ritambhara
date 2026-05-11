@@ -76,50 +76,6 @@ html {
 }
 
 body {
-    overflow-x: hidden;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-perspective: 1000;
-    perspective: 1000;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    body {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        backface-visibility: hidden;
-    }
-}
-
-*, *::before, *::after {
-    will-change: auto;
-}
-
-img {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    backface-visibility: hidden;
-}
-
-section {
-    contain: layout style;
-    content-visibility: auto;
-}
-
-.listing-card, .blog-card, .testimonial-card, .foco-item {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    backface-visibility: hidden;
-}
-}
-
-::selection {
-    background: var(--accent);
-    color: var(--white);
-}
-
-body {
     font-family: 'Outfit', sans-serif;
     font-size: 1rem;
     color: var(--primary);
@@ -177,14 +133,6 @@ a {
 
 ul {
     list-style: none;
-}
-
-section {
-    padding: 100px 0;
-}
-
-p {
-    line-height: 1.7;
 }
 
 /* Typography */
@@ -1130,7 +1078,7 @@ footer {
 
 .footer-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 3rem;
     margin-bottom: 3rem;
 }
